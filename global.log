@@ -1,0 +1,141 @@
+[TestServer] [IFO] [2018/02/02 16:06:35:465] Service: Start running ...
+[TestServer] [ERR] [2018/02/02 16:06:39:587] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [IFO] [2018/02/02 16:06:39:599] Common: LocateManagerI::updateAdapter result failed:TestServer.Main:agent-error:no connections:Grid:updateAdapter.Locator.Common
+[TestServer] [IFO] [2018/02/02 16:06:41:453] Common: LocateManagerI::updateAdapter result failed:TestServer.Main:agent-error:no connections:Grid:updateAdapter.Locator.Common
+[TestServer] [ERR] [2018/02/02 16:06:43:576] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [ERR] [2018/02/02 16:06:47:662] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [ERR] [2018/02/02 16:06:51:666] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [IFO] [2018/02/02 16:06:51:666] Common: LocateManagerI::updateAdapter result failed:TestServer.Main:agent-error:no connections:Grid:updateAdapter.Locator.Common
+[TestServer] [IFO] [2018/02/02 16:06:53:472] Common: LocateManagerI::updateAdapter result failed:TestServer.Main:agent-error:no connections:Grid:updateAdapter.Locator.Common
+[TestServer] [ERR] [2018/02/02 16:06:55:698] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [ERR] [2018/02/02 16:06:59:747] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [IFO] [2018/02/02 16:07:03:761] Common: LocateManagerI::updateAdapter result failed:TestServer.Main:agent-error:no connections:Grid:updateAdapter.Locator.Common
+[TestServer] [ERR] [2018/02/02 16:07:03:785] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [IFO] [2018/02/02 16:07:05:632] Common: LocateManagerI::updateAdapter result failed:TestServer.Main:agent-error:no connections:Grid:updateAdapter.Locator.Common
+[TestServer] [ERR] [2018/02/02 16:07:07:795] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [ERR] [2018/02/02 16:07:11:817] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [IFO] [2018/02/02 16:07:15:833] Common: LocateManagerI::updateAdapter result failed:TestServer.Main:agent-error:no connections:Grid:updateAdapter.Locator.Common
+[TestServer] [ERR] [2018/02/02 16:07:15:888] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [IFO] [2018/02/02 16:07:17:740] Common: LocateManagerI::updateAdapter result failed:TestServer.Main:agent-error:no connections:Grid:updateAdapter.Locator.Common
+[TestServer] [ERR] [2018/02/02 16:07:19:907] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [ERR] [2018/02/02 16:07:23:962] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [IFO] [2018/02/02 16:07:28:002] Common: LocateManagerI::updateAdapter result failed:TestServer.Main:agent-error:no connections:Grid:updateAdapter.Locator.Common
+[TestServer] [ERR] [2018/02/02 16:07:28:022] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [IFO] [2018/02/02 16:07:29:873] Common: LocateManagerI::updateAdapter result failed:TestServer.Main:agent-error:no connections:Grid:updateAdapter.Locator.Common
+[TestServer] [ERR] [2018/02/02 16:07:32:089] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [ERR] [2018/02/02 16:07:36:128] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [ERR] [2018/02/02 16:07:40:157] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [IFO] [2018/02/02 16:07:40:157] Common: LocateManagerI::updateAdapter result failed:TestServer.Main:agent-error:no connections:Grid:updateAdapter.Locator.Common
+[TestServer] [IFO] [2018/02/02 16:07:41:958] Common: LocateManagerI::updateAdapter result failed:TestServer.Main:agent-error:no connections:Grid:updateAdapter.Locator.Common
+[TestServer] [ERR] [2018/02/02 16:07:44:180] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [ERR] [2018/02/02 16:07:48:212] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [IFO] [2018/02/02 16:07:52:246] Common: LocateManagerI::updateAdapter result failed:TestServer.Main:agent-error:no connections:Grid:updateAdapter.Locator.Common
+[TestServer] [ERR] [2018/02/02 16:07:52:281] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [IFO] [2018/02/02 16:07:54:092] Common: LocateManagerI::updateAdapter result failed:TestServer.Main:agent-error:no connections:Grid:updateAdapter.Locator.Common
+[TestServer] [ERR] [2018/02/02 16:07:56:313] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [ERR] [2018/02/02 16:08:00:367] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [ERR] [2018/02/02 16:08:04:386] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [IFO] [2018/02/02 16:08:04:386] Common: LocateManagerI::updateAdapter result failed:TestServer.Main:agent-error:no connections:Grid:updateAdapter.Locator.Common
+[TestServer] [IFO] [2018/02/02 16:08:06:172] Common: LocateManagerI::updateAdapter result failed:TestServer.Main:agent-error:no connections:Grid:updateAdapter.Locator.Common
+[TestServer] [ERR] [2018/02/02 16:08:08:476] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [ERR] [2018/02/02 16:08:12:533] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [ERR] [2018/02/02 16:08:16:548] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [IFO] [2018/02/02 16:08:16:548] Common: LocateManagerI::updateAdapter result failed:TestServer.Main:agent-error:no connections:Grid:updateAdapter.Locator.Common
+[TestServer] [IFO] [2018/02/02 16:08:18:286] Common: LocateManagerI::updateAdapter result failed:TestServer.Main:agent-error:no connections:Grid:updateAdapter.Locator.Common
+[TestServer] [ERR] [2018/02/02 16:08:20:599] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [ERR] [2018/02/02 16:08:24:628] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [IFO] [2018/02/02 16:08:28:644] Common: LocateManagerI::updateAdapter result failed:TestServer.Main:agent-error:no connections:Grid:updateAdapter.Locator.Common
+[TestServer] [ERR] [2018/02/02 16:08:28:677] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [IFO] [2018/02/02 16:08:30:441] Common: LocateManagerI::updateAdapter result failed:TestServer.Main:agent-error:no connections:Grid:updateAdapter.Locator.Common
+[TestServer] [ERR] [2018/02/02 16:08:32:677] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [ERR] [2018/02/02 16:08:36:753] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [ERR] [2018/02/02 16:08:40:779] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [IFO] [2018/02/02 16:08:40:779] Common: LocateManagerI::updateAdapter result failed:TestServer.Main:agent-error:no connections:Grid:updateAdapter.Locator.Common
+[TestServer] [IFO] [2018/02/02 16:08:42:548] Common: LocateManagerI::updateAdapter result failed:TestServer.Main:agent-error:no connections:Grid:updateAdapter.Locator.Common
+[TestServer] [ERR] [2018/02/02 16:08:44:804] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [ERR] [2018/02/02 16:08:48:850] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [ERR] [2018/02/02 16:08:52:881] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [IFO] [2018/02/02 16:08:52:881] Common: LocateManagerI::updateAdapter result failed:TestServer.Main:agent-error:no connections:Grid:updateAdapter.Locator.Common
+[TestServer] [IFO] [2018/02/02 16:08:54:621] Common: LocateManagerI::updateAdapter result failed:TestServer.Main:agent-error:no connections:Grid:updateAdapter.Locator.Common
+[TestServer] [ERR] [2018/02/02 16:08:56:900] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [ERR] [2018/02/02 16:09:00:928] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [ERR] [2018/02/02 16:09:04:964] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [IFO] [2018/02/02 16:09:04:964] Common: LocateManagerI::updateAdapter result failed:TestServer.Main:agent-error:no connections:Grid:updateAdapter.Locator.Common
+[TestServer] [IFO] [2018/02/02 16:09:06:678] Common: LocateManagerI::updateAdapter result failed:TestServer.Main:agent-error:no connections:Grid:updateAdapter.Locator.Common
+[TestServer] [ERR] [2018/02/02 16:09:08:993] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [ERR] [2018/02/02 16:09:13:055] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [ERR] [2018/02/02 16:09:17:081] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [IFO] [2018/02/02 16:09:17:081] Common: LocateManagerI::updateAdapter result failed:TestServer.Main:agent-error:no connections:Grid:updateAdapter.Locator.Common
+[TestServer] [IFO] [2018/02/02 16:09:18:758] Common: LocateManagerI::updateAdapter result failed:TestServer.Main:agent-error:no connections:Grid:updateAdapter.Locator.Common
+[TestServer] [ERR] [2018/02/02 16:09:21:136] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [ERR] [2018/02/02 16:09:25:178] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [ERR] [2018/02/02 16:09:29:182] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [IFO] [2018/02/02 16:09:29:182] Common: LocateManagerI::updateAdapter result failed:TestServer.Main:agent-error:no connections:Grid:updateAdapter.Locator.Common
+[TestServer] [IFO] [2018/02/02 16:09:30:817] Common: LocateManagerI::updateAdapter result failed:TestServer.Main:agent-error:no connections:Grid:updateAdapter.Locator.Common
+[TestServer] [ERR] [2018/02/02 16:09:33:228] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [ERR] [2018/02/02 16:09:37:271] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [IFO] [2018/02/02 16:09:41:295] Common: LocateManagerI::updateAdapter result failed:TestServer.Main:agent-error:no connections:Grid:updateAdapter.Locator.Common
+[TestServer] [ERR] [2018/02/02 16:09:41:309] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [IFO] [2018/02/02 16:09:42:892] Common: LocateManagerI::updateAdapter result failed:TestServer.Main:agent-error:no connections:Grid:updateAdapter.Locator.Common
+[TestServer] [ERR] [2018/02/02 16:09:45:343] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [ERR] [2018/02/02 16:09:49:368] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [ERR] [2018/02/02 16:09:53:389] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [IFO] [2018/02/02 16:09:53:389] Common: LocateManagerI::updateAdapter result failed:TestServer.Main:agent-error:no connections:Grid:updateAdapter.Locator.Common
+[TestServer] [IFO] [2018/02/02 16:09:54:922] Common: LocateManagerI::updateAdapter result failed:TestServer.Main:agent-error:no connections:Grid:updateAdapter.Locator.Common
+[TestServer] [ERR] [2018/02/02 16:09:57:457] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [ERR] [2018/02/02 16:10:01:485] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [IFO] [2018/02/02 16:10:05:496] Common: LocateManagerI::updateAdapter result failed:TestServer.Main:agent-error:no connections:Grid:updateAdapter.Locator.Common
+[TestServer] [ERR] [2018/02/02 16:10:05:526] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [IFO] [2018/02/02 16:10:06:982] Common: LocateManagerI::updateAdapter result failed:TestServer.Main:agent-error:no connections:Grid:updateAdapter.Locator.Common
+[TestServer] [ERR] [2018/02/02 16:10:09:535] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [ERR] [2018/02/02 16:10:13:572] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [ERR] [2018/02/02 16:10:17:603] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [IFO] [2018/02/02 16:10:17:603] Common: LocateManagerI::updateAdapter result failed:TestServer.Main:agent-error:no connections:Grid:updateAdapter.Locator.Common
+[TestServer] [IFO] [2018/02/02 16:10:19:114] Common: LocateManagerI::updateAdapter result failed:TestServer.Main:agent-error:no connections:Grid:updateAdapter.Locator.Common
+[TestServer] [ERR] [2018/02/02 16:10:21:647] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [ERR] [2018/02/02 16:10:25:685] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [ERR] [2018/02/02 16:10:29:715] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [IFO] [2018/02/02 16:10:29:715] Common: LocateManagerI::updateAdapter result failed:TestServer.Main:agent-error:no connections:Grid:updateAdapter.Locator.Common
+[TestServer] [IFO] [2018/02/02 16:10:31:178] Common: LocateManagerI::updateAdapter result failed:TestServer.Main:agent-error:no connections:Grid:updateAdapter.Locator.Common
+[TestServer] [ERR] [2018/02/02 16:10:33:766] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [ERR] [2018/02/02 16:10:37:848] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [ERR] [2018/02/02 16:10:41:857] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [IFO] [2018/02/02 16:10:41:857] Common: LocateManagerI::updateAdapter result failed:TestServer.Main:agent-error:no connections:Grid:updateAdapter.Locator.Common
+[TestServer] [IFO] [2018/02/02 16:10:43:236] Common: LocateManagerI::updateAdapter result failed:TestServer.Main:agent-error:no connections:Grid:updateAdapter.Locator.Common
+[TestServer] [ERR] [2018/02/02 16:10:45:885] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [ERR] [2018/02/02 16:10:49:916] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [IFO] [2018/02/02 16:10:49:969] Common: LocateManagerI::updateAdapter result failed:TestServer.Main:agent-error:no connections:Grid:updateAdapter.Locator.Common
+[TestServer] [IFO] [2018/02/02 16:10:52:262] Common: LocateManagerI::updateAdapter result failed:TestServer.Main:agent-error:no connections:Grid:updateAdapter.Locator.Common
+[TestServer] [ERR] [2018/02/02 16:10:53:947] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [ERR] [2018/02/02 16:10:57:983] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [IFO] [2018/02/02 16:11:01:988] Common: LocateManagerI::updateAdapter result failed:TestServer.Main:agent-error:no connections:Grid:updateAdapter.Locator.Common
+[TestServer] [ERR] [2018/02/02 16:11:02:030] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [IFO] [2018/02/02 16:11:04:327] Common: LocateManagerI::updateAdapter result failed:TestServer.Main:agent-error:no connections:Grid:updateAdapter.Locator.Common
+[TestServer] [ERR] [2018/02/02 16:11:06:063] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [ERR] [2018/02/02 16:11:10:096] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [IFO] [2018/02/02 16:11:14:118] Common: LocateManagerI::updateAdapter result failed:TestServer.Main:agent-error:no connections:Grid:updateAdapter.Locator.Common
+[TestServer] [ERR] [2018/02/02 16:11:14:120] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [IFO] [2018/02/02 16:11:16:365] Common: LocateManagerI::updateAdapter result failed:TestServer.Main:agent-error:no connections:Grid:updateAdapter.Locator.Common
+[TestServer] [ERR] [2018/02/02 16:11:18:158] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [ERR] [2018/02/02 16:11:22:223] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [ERR] [2018/02/02 16:11:26:260] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [IFO] [2018/02/02 16:11:26:260] Common: LocateManagerI::updateAdapter result failed:TestServer.Main:agent-error:no connections:Grid:updateAdapter.Locator.Common
+[TestServer] [IFO] [2018/02/02 16:11:28:457] Common: LocateManagerI::updateAdapter result failed:TestServer.Main:agent-error:no connections:Grid:updateAdapter.Locator.Common
+[TestServer] [ERR] [2018/02/02 16:11:30:277] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [ERR] [2018/02/02 16:11:34:287] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [IFO] [2018/02/02 16:11:38:304] Common: LocateManagerI::updateAdapter result failed:TestServer.Main:agent-error:no connections:Grid:updateAdapter.Locator.Common
+[TestServer] [ERR] [2018/02/02 16:11:38:347] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [IFO] [2018/02/02 16:11:40:522] Common: LocateManagerI::updateAdapter result failed:TestServer.Main:agent-error:no connections:Grid:updateAdapter.Locator.Common
+[TestServer] [ERR] [2018/02/02 16:11:42:358] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [ERR] [2018/02/02 16:11:46:413] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [ERR] [2018/02/02 16:11:50:434] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [IFO] [2018/02/02 16:11:50:435] Common: LocateManagerI::updateAdapter result failed:TestServer.Main:agent-error:no connections:Grid:updateAdapter.Locator.Common
+[TestServer] [IFO] [2018/02/02 16:11:52:620] Common: LocateManagerI::updateAdapter result failed:TestServer.Main:agent-error:no connections:Grid:updateAdapter.Locator.Common
+[TestServer] [ERR] [2018/02/02 16:11:54:460] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [ERR] [2018/02/02 16:11:58:525] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [ERR] [2018/02/02 16:12:02:537] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [IFO] [2018/02/02 16:12:02:537] Common: LocateManagerI::updateAdapter result failed:TestServer.Main:agent-error:no connections:Grid:updateAdapter.Locator.Common
+[TestServer] [IFO] [2018/02/02 16:12:04:716] Common: LocateManagerI::updateAdapter result failed:TestServer.Main:agent-error:no connections:Grid:updateAdapter.Locator.Common
+[TestServer] [ERR] [2018/02/02 16:12:06:596] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [ERR] [2018/02/02 16:12:10:626] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;
+[TestServer] [ERR] [2018/02/02 16:12:14:620] Common: AdapterEndpointI::onConnClose:TestServer.Main:svarc -h 2;

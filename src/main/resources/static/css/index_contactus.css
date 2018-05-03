@@ -1,0 +1,13 @@
+/*-------------------------------
+
+*Filename:		index_contactus.css
+*Description:	contactus page style
+*Version:		2018-04-10
+*Author: 		Yog
+
+-------------------------------*/
+
+.main-contact{ min-height: 758px; background-color: #fff; padding: 2rem;}
+h1{ font-size: 25px; font-weight: normal;}
+.main-contact p{ font-size: 16px; line-height: 25px; margin-bottom: 10px;}
+#allmap{ height:450px; margin: 3% 0;}

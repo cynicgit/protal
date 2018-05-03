@@ -1,0 +1,18 @@
+/*-------------------------------
+*Filename:		article_article.css
+*Description:	article page style
+*Version:		2018-04-02
+*Author: 		Yog
+-------------------------------*/
+.main-news{padding-bottom:45px}
+.main-title{text-align:center;padding:1rem 0;border-bottom:#dfdfdf 1px dashed;margin-bottom:1rem}
+.main-title h1{font-size:18px;color:#333;font-weight:normal}
+.main-title h1+span{color:#888}
+
+.main-article{height:548px;overflow-y:scroll}
+.main-article p{color:#333;line-height:25px;margin-bottom:10px}
+.main-article+a{color:#333;position:absolute;bottom:15px;right:25px}
+
+::-webkit-scrollbar{width:3px}
+::-webkit-scrollbar-button{none}
+::-webkit-scrollbar-thumb{background-color:#000}

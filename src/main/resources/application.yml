@@ -1,0 +1,36 @@
+# mybatis_config
+mybatis:
+    mapper-locations: classpath:mapper/*.xml
+    type-aliases-package: com.miyou.entity
+    configuration:
+          map-underscore-to-camel-case: true
+
+#datasource#juphoon419708
+spring:
+    redis:
+      host: 192.168.2.205
+      port: 6379
+      timeout: 0
+      pool:
+        max-idle: 8
+        max-wait: -1
+        max-active: 8
+    thymeleaf:
+      cache: false
+      mode: LEGACYHTML5
+    resources:
+      static-locations: classpath:/static/
+
+
+server:
+  jsp-servlet:
+    init-parameters:
+      development: true
+  port: 80
+
+com:
+  recharge:
+    createUrl: http://www.xhgames.com:8089/api/auth/user/create/
+    loginUrl: http://www.xhgames.com:8089/api/auth/user/login/
+    logoutUrl: http://www.xhgames.com:8089/api/auth/user/logout/
+    changePasswordUrl: http://www.xhgames.com:8089/api/auth/user/change_password/

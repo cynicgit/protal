@@ -1,0 +1,22 @@
+/*-------------------------------
+*Filename:		list_article.css
+*Description:	aritcle list style
+*Version:		2018-04-02
+*Author: 		Yog
+-------------------------------*/
+
+.main-newsC{ border-bottom: #e5eae9 1px solid;}
+.main-newsC li{ display: inline-block;}
+.main-newsC a{ font-size: 16px; color:#333; line-height: 35px; padding: 10px 35px; display: block; border-bottom:#fff 2px solid; transition: all .3s;}
+.main-newsC a.curr{ color:#30c2a3; border-color:#30c2a3;}
+.main-newsC a:hover{ color:#fff; background:#30c2a3; border-color:#30c2a3;}
+.news-list li{ border-bottom:#dfdfdf 1px solid; position: relative;}
+.news-list li:hover{background-color:#edf6f8;}
+.news-list a{ max-width: 75%; color:#333; line-height: 3.7rem; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; display: inline-block;}
+.news-list span{ color:#888; position: absolute; right:0; top:17px;}
+
+.main-pagination{ padding-top: 15px;}
+.main-pagination li{ display: inline-block;}
+.main-pagination a{ width: 20px; height:20px; line-height: 19px; text-align: center; color:#333; border: #7d7d7d 1px solid; margin: 0 5px; display: block;}
+.main-pagination li:first-child a,.main-pagination li:last-child a{ width: auto; border:none;}
+.main-pagination a:hover{ text-decoration: underline;}

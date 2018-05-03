@@ -1,0 +1,468 @@
+<!doctype html>
+<html class="no-js" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <title>网站标题</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <meta name="renderer" content="webkit"/>
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <link rel="stylesheet" href="/css/amazeui.min.css"/>
+    <link rel="stylesheet" href="/css/common.css"/>
+    <link rel="stylesheet" href="/css/index.css"/>
+</head>
+
+<body>
+<!--[if lte IE 9]>
+<p class="browsehappy" style="background:red;line-height: 35px;color: #fff;font-size: 14px;text-align: center;">
+    你正在使用过时的浏览器，影响您的浏览体验。 <a
+        href="http://chrome.360.cn/" target="_blank" style="color: #fff;font-weight: bold;text-decoration: underline;">请点击下载新的浏览器</a>
+    以获得更好的体验！</p>
+<![endif]-->
+
+
+<!-- 模板内容开始 -->
+
+<!-- 头部内容开始 -->
+<header>
+    <div class="logo"><img src="/images/logo.png" alt="山水广纪"/></div>
+    <div class="player" data-am-scrollspy="{animation:'fade',delay:300,repeat:false}"><img src="/images/player.png"
+                                                                                           alt=""/></div>
+    <div class="download"><a href="javascript: ;" onclick="alert('即将上线敬请期待');"><i class="am-icon-apple"></i>IOS下载</a><a
+            href="http://www.xhgames.com/game_res/apk/ssgj.apk" download="山水广纪_1.0"><i class="am-icon-android"></i>Android</a></div>
+</header>
+<!-- 头部内容结束 -->
+
+<!-- 主体内容开始 -->
+<div id="main" class="am-g am-g-collapse">
+    <div class="main-left am-u-sm-12 am-u-md-3">
+        <div class="main-nav am-cf">
+            <ul>
+                <li><a href="/" class="curr">官网首页</a></li>
+                <li><a href="/list_article">新闻公告</a></li>
+                <li><a href="javascript: ;" onclick="aler();">游戏论坛</a></li>
+                <li><a href="javascript: ;" onclick="aler();">玩法资料</a></li>
+            </ul>
+            <div class="main-navd am-show-md-up" th:if="${session.user == null}">
+                    <a href="##" data-am-modal="{target: '#reg', closeViaDimmer: 0, width: 400}">注册</a>
+                    <a href="##" data-am-modal="{target: '#logn', closeViaDimmer: 0, width: 400}">登录</a>
+
+            </div>
+            <div class="main-navd am-show-md-up" th:if="${session.user != null}">
+                <a href="##"   th:text="${session.user.account}"> </a>
+                <a href="/logout"   > 退出 </a>
+            </div>
+
+            <div class="am-modal am-modal-no-btn" tabindex="-1" id="reg">
+                <div class="am-modal-dialog">
+                    <div class="am-modal-hd">帐号注册
+                        <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+                    </div>
+                    <div class="am-modal-bd">
+                        <form onsubmit="return false"  id="reg_book">
+                            <label>帐号:<input type="text" id="reg-account"/></label>
+                            <label>密码:<input type="password" id="reg-psw1"/></label>
+                            <label>真实姓名:<input type="text"/></label>
+                            <label>身份证:<input type="text"/></label>
+                            <label>验证码:<input type="text" id="reg-code"/><img src="/imageCode" onclick="getCode(this)"
+                                                                              class="form_yzm"/></label>
+                            <button type="button" id="regist">注册</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="am-modal am-modal-no-btn" tabindex="-1" id="logn">
+                <div class="am-modal-dialog">
+                    <div class="am-modal-hd">用户登录
+                        <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+                    </div>
+                    <div class="am-modal-bd">
+                        <form    onsubmit="return false" id="reg_book">
+                            <label>帐号:<input type="text" id="login-account"></label>
+                            <label>密码:<input type="password" id="login-psw"></label>
+                            <label>验证码:<input type="text" id="login-code"><img src="/imageCode" onclick="getCode(this)"
+                                                                               class="form_yzm"></label>
+                            <button type="button" id="login">登录</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-download am-show-md-up">
+            <div>
+                <h3>游戏下载</h3>
+                <div class="down-qrcode"><img src="/images/qrcode.jpg" alt=""></div>
+                <a href="javascript: ;" onclick="alert('即将上线敬请期待');"><i class="am-icon-apple"></i>IOS下载</a>
+                <a href="http://www.xhgames.com/game_res/apk/ssgj.apk" download="山水广纪_1.0"><i class="am-icon-android"></i>Android</a>
+                <div class="left-info">
+                    <p><span>公司电话:</span>0574-89082021</p>
+                    <p><span>公司地址:</span>浙江省宁波市江北区世茂日湖中心</p>
+                    <p>宁波轩好网络科技有限公司</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-right am-u-sm-12 am-u-md-9">
+        <div class="am-g right-box1">
+            <div class="am-u-md-8 main-slider">
+                <div class="am-slider am-slider-a2" data-am-flexslider id="ad-slider">
+                    <ul class="am-slides">
+                        <li><img src="/images/banner/a1.jpg"/></li>
+                        <li><img src="/images/banner/a2.jpg"/></li>
+                        <li><img src="/images/banner/a3.jpg"/></li>
+                        <li><img src="/images/banner/a4.jpg"/></li>
+                        <li><img src="/images/banner/a5.jpg"/></li>
+                        <li><img src="/images/banner/a6.jpg"/></li>
+                        <li><img src="/images/banner/a7.jpg"/></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="am-u-md-4 main-news">
+                <h2>最新公告</h2>
+                <ul>
+                    <li><a href="/article" class="am-text-truncate">[玩家原创]御龙快讯：新年回馈超值道具，助你快速提升战力！</a></li>
+                    <li><a href="/article" class="am-text-truncate">[玩家原创]御龙快讯：新年回馈超值道具，助你快速提升战力！</a></li>
+                    <li><a href="/article" class="am-text-truncate">[玩家原创]御龙快讯：新年回馈超值道具，助你快速提升战力！</a></li>
+                    <li><a href="/article" class="am-text-truncate">[玩家原创]御龙快讯：新年回馈超值道具，助你快速提升战力！</a></li>
+                    <li><a href="/article" class="am-text-truncate">[玩家原创]御龙快讯：新年回馈超值道具，助你快速提升战力！</a></li>
+                    <li><a href="/article" class="am-text-truncate">[玩家原创]御龙快讯：新年回馈超值道具，助你快速提升战力！</a></li>
+                    <li><a href="/article" class="am-text-truncate">[玩家原创]御龙快讯：新年回馈超值道具，助你快速提升战力！</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-syn">
+            <div class="am-tabs" data-am-tabs="{noSwipe: 1}" id="doc-tab-demo-1">
+                <ul class="am-tabs-nav am-nav am-nav-tabs">
+                    <li class="am-active"><a href="javascript: void(0)"><img src="/images/thu_p1.png"></a></li>
+                    <li><a href="javascript: void(0)"><img src="/images/thu_p2.png"></a></li>
+                    <li><a href="javascript: void(0)"><img src="/images/thu_p3.png"></a></li>
+                    <li><a href="javascript: void(0)"><img src="/images/thu_p4.png"></a></li>
+                </ul>
+                <div class="am-tabs-bd am-tabs-bd-ofv">
+                    <div class="am-tab-panel am-active">
+                        <div class="syn-txt">
+                            <h4>觉剑</h4>
+                            <p>杨靖徒弟，尊师重道，刚烈正义。对于剑的使用，可谓天赋异禀。<br>(物理单体型职业)</p>
+                        </div>
+                        <div class="syn-ski">
+                            <ul>
+                                <li>
+                                    <div class="am-dropdown" data-am-dropdown>
+                                        <a class="am-dropdown-toggle"><img src="/images/ski/jj_skill1.png"></a>
+                                        <div class="am-dropdown-content">
+                                            <p>跪剑弹锋</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="am-dropdown" data-am-dropdown>
+                                        <a class="am-dropdown-toggle"><img src="/images/ski/jj_skill2.png"></a>
+                                        <div class="am-dropdown-content">
+                                            <p>寒无席</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="am-dropdown" data-am-dropdown>
+                                        <a class="am-dropdown-toggle"><img src="/images/ski/jj_skill3.png"></a>
+                                        <div class="am-dropdown-content">
+                                            <p>苦手</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="am-dropdown" data-am-dropdown>
+                                        <a class="am-dropdown-toggle"><img src="/images/ski/jj_skill4.png"></a>
+                                        <div class="am-dropdown-content">
+                                            <p>气横风尘</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="syn-player"><img src="/images/palyer_p1.png"></div>
+                    </div>
+                    <div class="am-tab-panel">
+                        <div class="syn-txt">
+                            <h4>翻云</h4>
+                            <p>李思邈之徒，斩妖除魔。对法术修炼非常渴望，使得学习了一身法术。<br>(法术群体型职业)</p>
+                        </div>
+                        <div class="syn-ski">
+                            <ul>
+                                <li>
+                                    <div class="am-dropdown am-active" data-am-dropdown>
+                                        <a class="am-dropdown-toggle"><img src="/images/ski/fy_skill1.png"></a>
+                                        <div class="am-dropdown-content">
+                                            <p>碧散江天</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="am-dropdown" data-am-dropdown>
+                                        <a class="am-dropdown-toggle"><img src="/images/ski/fy_skill2.png"></a>
+                                        <div class="am-dropdown-content">
+                                            <p>掌灵劈</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="am-dropdown" data-am-dropdown>
+                                        <a class="am-dropdown-toggle"><img src="/images/ski/fy_skill3.png"></a>
+                                        <div class="am-dropdown-content">
+                                            <p>腾那</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="am-dropdown" data-am-dropdown>
+                                        <a class="am-dropdown-toggle"><img src="/images/ski/fy_skill4.png"></a>
+                                        <div class="am-dropdown-content">
+                                            <p>辰勾御龙</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="syn-player"><img src="/images/palyer_p2.png"></div>
+                    </div>
+                    <div class="am-tab-panel">
+                        <div class="syn-txt">
+                            <h4>师容</h4>
+                            <p>出生冥域，跟随师傅师丹修习丹术，精通巫蛊。初入江湖，行侠仗义。<br>(爆发型职业)</p>
+                        </div>
+                        <div class="syn-ski">
+                            <ul>
+                                <li>
+                                    <div class="am-dropdown" data-am-dropdown>
+                                        <a class="am-dropdown-toggle"><img src="/images/ski/sr_skill1.png"></a>
+                                        <div class="am-dropdown-content">
+                                            <p>微咫尺</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="am-dropdown" data-am-dropdown>
+                                        <a class="am-dropdown-toggle"><img src="/images/ski/sr_skill2.png"></a>
+                                        <div class="am-dropdown-content">
+                                            <p>思泊</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="am-dropdown" data-am-dropdown>
+                                        <a class="am-dropdown-toggle"><img src="/images/ski/sr_skill3.png"></a>
+                                        <div class="am-dropdown-content">
+                                            <p>回溯留痕</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="am-dropdown" data-am-dropdown>
+                                        <a class="am-dropdown-toggle"><img src="/images/ski/sr_skill4.png"></a>
+                                        <div class="am-dropdown-content">
+                                            <p>不意之隙</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="syn-player"><img src="/images/palyer_p3.png"></div>
+                    </div>
+                    <div class="am-tab-panel">
+                        <div class="syn-txt">
+                            <h4>玉火</h4>
+                            <p>吸收了天地精华，天生拥有仙力。在菩萨身边修炼，习得了一身仙术。<br>(辅助型职业)</p>
+                        </div>
+                        <div class="syn-ski">
+                            <ul>
+                                <li>
+                                    <div class="am-dropdown" data-am-dropdown>
+                                        <a class="am-dropdown-toggle"><img src="/images/ski/yh_skill1.png"></a>
+                                        <div class="am-dropdown-content">
+                                            <p>拂花玉</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="am-dropdown" data-am-dropdown>
+                                        <a class="am-dropdown-toggle"><img src="/images/ski/yh_skill2.png"></a>
+                                        <div class="am-dropdown-content">
+                                            <p>抖焰</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="am-dropdown" data-am-dropdown>
+                                        <a class="am-dropdown-toggle"><img src="/images/ski/yh_skill3.png"></a>
+                                        <div class="am-dropdown-content">
+                                            <p>芽萌普渡</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="am-dropdown" data-am-dropdown>
+                                        <a class="am-dropdown-toggle"><img src="/images/ski/yh_skill4.png"></a>
+                                        <div class="am-dropdown-content">
+                                            <p>伤不寻</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="syn-player"><img src="/images/palyer_p4.png"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 主体内容结束 -->
+
+<!-- 尾部内容开始 -->
+<footer>
+    <div class="am-g am-g-fixed">
+        <div class="am-u-sm-12 am-u-md-2"><img src="/images/comp_logo.png" alt="轩好游戏"></div>
+        <div class="am-u-sm-12 am-u-md-10">
+            <ul>
+                <li><a href="/parcare">家长监护</a></li>
+                <li><a href="/contactus">联系我们</a></li>
+            </ul>
+            <p>轩好网络科技有限公司 版权所有@2018-2021浙网文[2017]1340-024号 公安机关备案33020502000128号 ICP证15024267号</p>
+        </div>
+        <div class="am-u-sm-12 footer-tip">
+            <p>健康游戏公告：抵制不良游戏 拒绝盗版游戏 注意自我保护 谨防受骗上当 适度游戏益脑 沉迷游戏伤身 合理安排时间 享受健康生活</p>
+            <p>本游戏适合18周岁以上的成年人用户，未满18周岁未成年用户请在家长的监督下进行游戏</p></div>
+    </div>
+</footer>
+<!-- 尾部内容结束 -->
+
+<!-- 模板内容结束 -->
+
+
+<!--[if lt IE 9]>
+<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="/js/polyfill/rem.min.js"></script>
+<script src="/js/polyfill/respond.min.js"></script>
+<script src="/js/amazeui.legacy.js"></script>
+<![endif]-->
+
+
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="/js/jquery.min.js"></script>
+<script src="/js/amazeui.min.js"></script>
+<script src="/js/uuid.js"></script>
+<script type="text/javascript">
+    /*模板js内容*/
+    function getCode(img) {
+        img.src = "/imageCode?t=" + new Date();
+    }
+
+
+    $("#login").click(function () {
+        var account = $('#login-account').val()
+        var password = $('#login-psw').val()
+        var code = $('#login-code').val()
+        if (account === '') {
+            alert('请输入账号')
+        } else if (password === '') {
+            alert('请输入密码')
+        } else if (code === '') {
+            alert('请输入验证码')
+        } else {
+            var platform = 1
+            var u = navigator.userAgent
+            var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1 //android终端
+            var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/) //ios终端
+            if(isIOS){
+                platform = 2
+            }else if(isAndroid){
+                platform = 3
+            }
+            $.ajax({
+                url: '/login',
+                type: 'post',
+                data: {
+                    account: account,
+                    password: password,
+                    code: code,
+                    deviceId: uuid.v1(),
+                    platform: platform,
+                    sku: 'web'
+                },
+                success: function (response) {
+                    if (response.code === 1) {
+                        var data = JSON.parse(response.data)
+                        if (data.status !== 0 || data.errcode !== 0) {
+                            alert(data.errmsg)
+                        } else {
+                            alert('登录成功')
+                            setTimeout(function () {
+                                window.location.reload();
+                            }, 1500)
+                        }
+                    } else if (response.code === 0) {
+                        alert(response.error)
+                    }
+                },
+                error: function (xhr, status) {
+                    alert(status)
+                }
+            });
+        }
+
+    });
+    $("#regist").click(function () {
+        var account = $('#reg-account').val()
+        var password = $('#reg-psw1').val()
+        var code = $('#reg-code').val()
+        if (account === '') {
+            alert('请输入账号')
+        } else if (password === '') {
+            alert('请输入密码')
+        } else if (code === '') {
+            alert('请输入验证码')
+        } else {
+
+            $.ajax({
+                url: '/register',
+                type: 'post',
+                data: {
+                    account: account,
+                    password: password,
+                    code: code,
+                    deviceId: uuid.v1()
+                },
+                success: function (response) {
+                    if (response.code === 1) {
+                        var data = JSON.parse(response.data)
+                        if (data.status !== 0 || data.errcode !== 0) {
+                            alert(data.errmsg)
+                        } else {
+                            alert('注册成功，请登录')
+                            setTimeout(function () {
+                                window.location.reload();
+                            }, 1500)
+                        }
+                    } else if (response.code === 0) {
+                        alert(response.error)
+                    }
+                },
+                error: function (xhr, status) {
+                    alert(status)
+                }
+
+            });
+        }
+    })
+
+
+</script>
+
+<!--<![endif]-->
+
+</body>
+
+</html>
