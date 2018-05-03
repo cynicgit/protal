@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.recharge.protal.mapper.ArticleMapper" >
+
+
+    <select id="getArticles" resultType="com.recharge.protal.entity.Article">
+        SELECT * from article ORDER BY create_date DESC
+    </select>
+    <select id="getArticleById" resultType="com.recharge.protal.entity.Article">
+        SELECT * FROM article where id = #{id}
+    </select>
+</mapper>

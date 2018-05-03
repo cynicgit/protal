@@ -121,14 +121,8 @@
             </div>
             <div class="am-u-md-4 main-news">
                 <h2>最新公告</h2>
-                <ul>
-                    <li><a href="/article" class="am-text-truncate">[玩家原创]御龙快讯：新年回馈超值道具，助你快速提升战力！</a></li>
-                    <li><a href="/article" class="am-text-truncate">[玩家原创]御龙快讯：新年回馈超值道具，助你快速提升战力！</a></li>
-                    <li><a href="/article" class="am-text-truncate">[玩家原创]御龙快讯：新年回馈超值道具，助你快速提升战力！</a></li>
-                    <li><a href="/article" class="am-text-truncate">[玩家原创]御龙快讯：新年回馈超值道具，助你快速提升战力！</a></li>
-                    <li><a href="/article" class="am-text-truncate">[玩家原创]御龙快讯：新年回馈超值道具，助你快速提升战力！</a></li>
-                    <li><a href="/article" class="am-text-truncate">[玩家原创]御龙快讯：新年回馈超值道具，助你快速提升战力！</a></li>
-                    <li><a href="/article" class="am-text-truncate">[玩家原创]御龙快讯：新年回馈超值道具，助你快速提升战力！</a></li>
+                <ul th:each="a:${articles}">
+                    <li><a th:href="@{'/article/' + ${a.id}}" class="am-text-truncate" th:text="${a.content}"></a></li>
                 </ul>
             </div>
         </div>

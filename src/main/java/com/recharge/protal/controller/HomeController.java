@@ -1,11 +1,14 @@
 package com.recharge.protal.controller;
 
+import com.github.pagehelper.PageInfo;
 import com.google.code.kaptcha.impl.DefaultKaptcha;
 import com.recharge.protal.common.ServerResponse;
 import com.recharge.protal.config.Const;
 import com.recharge.protal.entity.ApiResult;
+import com.recharge.protal.entity.Article;
 import com.recharge.protal.entity.User;
 import com.recharge.protal.exception.BusinessException;
+import com.recharge.protal.service.ArticleService;
 import com.recharge.protal.utils.JsonUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -14,10 +17,7 @@ import org.springframework.ui.Model;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 import org.springframework.util.StringUtils;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
 import javax.imageio.ImageIO;
@@ -26,6 +26,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
+import java.util.List;
 
 @Controller
 public class HomeController {
@@ -38,6 +39,9 @@ public class HomeController {
 
 //    @Autowired
 //    private JedisUtils jedisUtils;
+
+    @Autowired
+    private ArticleService articleService;
 
     @Value("${com.recharge.createUrl}")
     private String createUrl;
@@ -120,7 +124,8 @@ public class HomeController {
 
     @GetMapping("/")
     public String index(Model model, HttpSession session) {
-        session.setAttribute("name", "sss");
+        PageInfo<Article> pageInfo = articleService.getArticles(1, 5);
+        model.addAttribute("articles", pageInfo.getList());
         return "index";
     }
 
@@ -176,10 +181,21 @@ public class HomeController {
     public String index_parcare() {
         return "index_parcare";
     }
+
     @RequestMapping("/article")
     public String article_article() {
         return "article_article";
     }
+
+    @RequestMapping("/article/{id}")
+    public String article(@PathVariable Integer id, Model model) {
+        Article article = articleService.getArticleById(id);
+        model.addAttribute("article", article);
+        return "article_article";
+    }
+
+
+
     @RequestMapping("/list_article")
     public String list_article() {
         return "list_article";
